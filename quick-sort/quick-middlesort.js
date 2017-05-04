@@ -1,3 +1,7 @@
+//This implementation isn't mine, I cloned it from: https://github.com/escherba/algorithms-in-javascript
+
+//I'll be working to understand some of what's going on here, specifically JS's bitwise operators and the efficiency reasons for doing so.
+
 aij.quickmiddleSort = (function(){
     /*jshint bitwise: false*/
     "use strict";
