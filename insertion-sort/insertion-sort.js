@@ -2,14 +2,15 @@
 // inserting a single element in the right for a given iteration. Every iteration
 // through the collection leaves a greater segment sorted.
 
-function sort(values) {
-  var length = values.length;
-  for(var i = 1; i < length; ++i) {
-    var temp = values[i];
+function insertionSort(array) {
+  for(var i = 0; i < array.length; i++) {
+    var temp = array[i];
     var j = i - 1;
-    for(; j >= 0 && values[j] > temp; --j) {
-      values[j+1] = values[j];
+    while (j >= 0 && array[j] > temp) {
+      array[j + 1] = array[j];
+      j--;
     }
-    values[j+1] = temp;
+    array[j + 1] = temp;
   }
-};
+  return array;
+}
