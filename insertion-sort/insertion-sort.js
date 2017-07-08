@@ -14,3 +14,6 @@ function insertionSort(arr) {
   }
   return arr;
 }
+
+// Best case: O(n)
+// Average: O(n^2)
